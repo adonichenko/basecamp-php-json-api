@@ -217,7 +217,7 @@ class Datafinder {
 				$ch = $info['handle'];
 				$getinfo[$arref[strval($ch)]] = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 			}
-			usleep(100);
+			usleep(888);
 		} while ($running > 0);
 
 		$this->getinfo = $getinfo;
